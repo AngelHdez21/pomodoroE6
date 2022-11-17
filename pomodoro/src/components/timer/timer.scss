@@ -1,11 +1,12 @@
-.container{
+.container {
     background-color: cadetblue;
     border-radius: 10px;
     width: 35%;
-    display:inline;
+    display: inline;
     margin-left: 10px;
     // position: fixed;
     justify-content: flex-end;
+
     &__message {
         font-size: 2em;
         min-height: 1.3em;
@@ -13,81 +14,115 @@
         text-align: center;
     }
 
-    &__timer{
+    &__timer {
         font-size: 3em;
-        min-height: 1.3em;        
-        padding: 10px;        
+        min-height: 1.3em;
+        padding: 10px;
         text-align: center;
     }
+
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    
+
 }
 
-.buttons{
+.buttons {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     padding: 10px;
     gap: 15px;
     margin: 5px;
-    &__start{
+
+    &__start {
         background-color: rgb(52, 133, 136);
         border-radius: 12px;
         border: 0;
         box-sizing: border-box;
         color: #eee;
-        cursor: pointer;        
+        cursor: pointer;
         font-size: 18px;
         padding: 9px;
         height: 100%;
         width: 50%;
-        text-align: center; 
+        text-align: center;
     }
-    &__start:hover{
+
+    &__start:hover {
         background-color: rgb(25, 57, 58);
     }
-    &__start:active{
+
+    &__start:active {
         background-color: rgb(118, 163, 165);
     }
 
-    &__reset{
+    &__skip {
         background-color: rgb(52, 133, 136);
         border-radius: 12px;
         border: 0;
         box-sizing: border-box;
         color: #eee;
-        cursor: pointer;        
+        cursor: pointer;
         font-size: 18px;
         padding: 9px;
         height: 100%;
         width: 50%;
-        text-align: center; 
-    }
-    &__reset:hover{
-        background-color: rgb(25, 57, 58);
-    }
-    &__reset:active{
-        background-color: rgb(118, 163, 165);
+        text-align: center;
     }
 
-    &__reset:disabled{
+    &__skip:disabled {
         background-color: rgb(3, 65, 68);
         cursor: not-allowed;
     }
 
-    &__continue{
+    &__skip:hover {
+        background-color: rgb(25, 57, 58);
+    }
+
+    &__skip:active {
+        background-color: rgb(118, 163, 165);
+    }
+
+
+    &__reset {
+        background-color: rgb(52, 133, 136);
+        border-radius: 12px;
+        border: 0;
+        box-sizing: border-box;
+        color: #eee;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 9px;
+        height: 100%;
+        width: 50%;
+        text-align: center;
+    }
+
+    &__reset:hover {
+        background-color: rgb(25, 57, 58);
+    }
+
+    &__reset:active {
+        background-color: rgb(118, 163, 165);
+    }
+
+    &__reset:disabled {
+        background-color: rgb(3, 65, 68);
+        cursor: not-allowed;
+    }
+
+    &__continue {
         background-color: rgb(52, 133, 136);
         border-radius: 12px;
         border: 0;
         box-sizing: border-box;
         margin-left: 6px;
         color: #eee;
-        cursor: pointer;        
+        cursor: pointer;
         font-size: 17px;
         width: 90px;
         height: 40px;
-        text-align: center; 
+        text-align: center;
     }
 }
